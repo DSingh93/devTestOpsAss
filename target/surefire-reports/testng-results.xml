@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-15T08:23:34Z" name="Suite" finished-at="2023-08-15T08:23:57Z" duration-ms="22085">
+    <groups>
+    </groups>
+    <test started-at="2023-08-15T08:23:34Z" name="Test Basics" finished-at="2023-08-15T08:23:57Z" duration-ms="22085">
+      <class name="devopsDemo.LaunchBrowser">
+        <test-method signature="myTest()[pri:0, instance:devopsDemo.LaunchBrowser@731f8236]" started-at="2023-08-15T13:53:34Z" name="myTest" finished-at="2023-08-15T13:53:35Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method signature="myTest2()[pri:0, instance:devopsDemo.LaunchBrowser@731f8236]" started-at="2023-08-15T13:53:35Z" name="myTest2" finished-at="2023-08-15T13:53:57Z" duration-ms="22058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest2 -->
+        <test-method signature="myTest3()[pri:0, instance:devopsDemo.LaunchBrowser@731f8236]" started-at="2023-08-15T13:53:57Z" name="myTest3" finished-at="2023-08-15T13:53:57Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTest3 -->
+      </class> <!-- devopsDemo.LaunchBrowser -->
+    </test> <!-- Test Basics -->
+  </suite> <!-- Suite -->
+</testng-results>
