@@ -1,15 +1,12 @@
 pipeline { 
-    agent {label 'linux'}
-    options {
-	    buildDiscarder(logRotator(numToKeepStr: '5'))
-    }  
+    agent any
+    envirnment{
+	    PATH = "$PATH:/opt/apache-maven-3.8.2/bin"
+    } 
     stages {
-        stage('Scan') {
-            steps {             
-				withSonarQubeEnv(installationName: 'SQ1'){
-					sh './mvn clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
-				}
-            }
-        }
+	stage('build'){
+		sh 'mvn clean package'
+	}
+
     }
 }
