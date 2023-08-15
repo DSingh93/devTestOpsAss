@@ -2,9 +2,10 @@ pipeline {
     agent any 
     stages {
 	stage('build'){
-		steps{
-		sh 'mvn clean package'
-		}
+		steps {
+            withMaven(maven : 'apache-maven-3.6.1') {
+                bat'mvn clean compile'
+            }
 	}
 
     }
